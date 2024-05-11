@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <!-- meta tag so that our website looks good in mobile also -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products - RedStore </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="Menuitems">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="Index.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+        
+    </div>
+
+
+
+<!-- Featured Product-->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Products </h2>
+        <select>
+            <option > Default</option>
+            <option > Short by Price</option>
+            <option > Short by popularity</option>
+            <option > Short by Rating</option>
+            <option > Short by Sale</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.jpg" >
+            <h4>Red Printed T-shirt</h4>
+            <p>600 Rs.</p>
+        </div>
+    
+    
+        <div class="col-4">
+            <img src="images/product-2.jpg" >
+            <h4>Shoes</h4>
+            <p>800 Rs.</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-3.jpg" >
+            <h4>Trouser</h4>
+            <p>900 Rs.</p>
+        </div>
+    
+        <div class="col-4">
+            <img src="images/product-4.jpg" >
+            <h4>Black T-shirt</h4>
+            <p>700 Rs.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg" >
+            <h4>Sports Shoes</h4>
+            <p>1100 Rs.</p>
+        </div>
+    
+    
+        <div class="col-4">
+            <img src="images/product-6.jpg" >
+            <h4>T-shirt</h4>
+            <p>600 Rs.</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-7.jpg" >
+            <h4>Shocks</h4>
+            <p>400 Rs.</p>
+        </div>
+    
+        <div class="col-4">
+            <img src="images/product-8.jpg" >
+            <h4>Watch</h4>
+            <p>1000 Rs.</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-9.jpg" >
+            <h4>Watch</h4>
+            <p>800 Rs.</p>
+        </div>
+    
+    
+        <div class="col-4">
+            <img src="images/product-10.jpg" >
+            <h4>Spikes</h4>
+            <p>1200 Rs.</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-11.jpg" >
+            <h4>Belly</h4>
+            <p>700 Rs.</p>
+        </div>
+    
+        <div class="col-4">
+            <img src="images/product-12.jpg" >
+            <h4>Trouser</h4>
+            <p>600 Rs.</p>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>&#8594;</span>
+        </div>
+
+    </div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Android and ios mobile phones. </p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our purpose is to sustainable make the pleasure and benefit of sports accesible to the many. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">CopyRight 2023 </p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    var Menuitems = document.getElementById("Menuitems");;
+
+    Menuitems.style.maxHeight = "0px"; 
+
+    function menutoggle(){
+        if(Menuitems.style.maxHeight == "0px")
+        {
+            Menuitems.style.maxHeight = "200px"; 
+        }
+        else{
+            Menuitems.style.maxHeight = "0px"; 
+        }
+    }
+</script>
+</body>
+</html>
